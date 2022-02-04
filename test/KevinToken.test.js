@@ -50,7 +50,7 @@ describe('ERC20Upgradeable', function () {
       const result = await proxyContract.balanceOf(
         '0x4C1a337F1d09b86FF71fd1d19B95E1756e96EfF9'
       );
-      expect(result[0]).to.equal('0xd3c21bcecceda1000000');
+      expect(result.toString()).to.equal('1000000000000000000000000');
     });
   });
 });
